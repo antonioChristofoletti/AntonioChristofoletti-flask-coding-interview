@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "flask-interview"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "flask_interview"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Flask = "^2.3.2"
+alembic = "^1.10.4"
+sqlalchemy = "^2.0.12"
+psycopg2-binary = "^2.9.6"
+flask-sqlalchemy = "^3.0.3"
+flask-openapi3 = "^2.3.2"
+pytest = "^7.3.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
