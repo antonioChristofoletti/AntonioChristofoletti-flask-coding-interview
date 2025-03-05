@@ -1,5 +1,6 @@
 from sqlalchemy.orm import Mapped, mapped_column
 
+from api import db
 from api.db import Base
 
 
@@ -13,3 +14,4 @@ class Users(Base):
     last_login: Mapped[str] = mapped_column(nullable=True)
     first_name: Mapped[str] = mapped_column(nullable=False)
     last_name: Mapped[str] = mapped_column(nullable=False)
+    is_admin: Mapped[bool] = mapped_column(nullable=False, default=False)    
